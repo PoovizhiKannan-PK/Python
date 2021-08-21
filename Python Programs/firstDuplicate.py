@@ -2,12 +2,12 @@ def firstDuplicate(n, arr):
     if arr == [] or n == 1:
         return arr
     else:
-        seen = []
+        seen = {}
         for i in range(n):
-            if arr[i] in seen:
-                return arr[i]
+            if arr[i] in seen.keys():
+                return arr[i], seen[arr[i]]
             else:
-                seen.append(arr[i])
+                seen[arr[i]] = i
         return -1
 
 arr = []
