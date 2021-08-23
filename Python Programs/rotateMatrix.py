@@ -20,7 +20,7 @@ def rotateMatrix(matrix, r, c):
 #Row and Column are same for this problem
 matrix = []
 r = int(input("Enter number of Rows: "))
-c = int(input("Enter number of columns"))
+c = int(input("Enter number of columns: "))
 
 for i in range(r):
     col = []
