@@ -1,3 +1,6 @@
+# For input "aaabbbcddeff" find the first non repeating character. output: c
+
+
 def firstNonRepeatingLetter(arr):
     if arr ==[] or len(arr) == 1:
         return arr

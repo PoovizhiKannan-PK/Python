@@ -1,4 +1,4 @@
-num = 5678346756
+num = 12345
 sum = 0
 
 while(num != 0):
@@ -6,9 +6,7 @@ while(num != 0):
     sum += rem
     num = (int)(num/10)
     if num == 0:
-        if (int)(sum/10) == 0:
-            num = 0
-        else:
+        if (int)(sum/10) != 0:
             num = sum
             sum = 0
 
