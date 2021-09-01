@@ -1,3 +1,5 @@
+# for  given two lists, find two numbers, one from each list, whose sum add up to the target value
+
 def sumOfTwo(arr1, arr2, sum):
     seen = set()
     for i in arr1:
