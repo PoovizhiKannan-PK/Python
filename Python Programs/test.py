@@ -5,3 +5,8 @@ tlt = 0
 for i in range(a,b):
     tlt += l[i]
 print(tlt)
+
+if 2 in l[:3]:
+    print(True)
+else: 
+    print(False)
