@@ -5,18 +5,6 @@
 j = "aAbc"
 s = "aAAbbb"
 jewels = 0
-# stones = {}
-# for i in s:
-#     if i in stones.keys():
-#         stones[i] += 1
-#     else:
-#         stones[i] = 1
-
-# jewels = 0
-
-# for i in j:
-#     if i in stones.keys():
-#         jewels += stones[i]
 
 for i in range(len(s)):
     if s[i] in j:
