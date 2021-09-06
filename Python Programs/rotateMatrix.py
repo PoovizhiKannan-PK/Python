@@ -1,3 +1,5 @@
+# For a given matrix, rotate it by 90 degree
+
 
 def rotateMatrix(matrix, r, c):
     #First transpose the matrix
@@ -7,12 +9,12 @@ def rotateMatrix(matrix, r, c):
                 matrix[i][j] = matrix[i][j] + matrix[j][i]
                 matrix[j][i] = matrix[i][j] - matrix[j][i]
                 matrix[i][j] = matrix[i][j] - matrix[j][i]
-                
+    # Then swap first and last column and so on...        
     for i in range(r):
         for j in range(int(c/2)):
-            matrix[i][j] = matrix[i][j] + matrix[i][r-j-1]
-            matrix[i][r-j-1] = matrix[i][j] - matrix[i][r-j-1]
-            matrix[i][j] = matrix[i][j] - matrix[i][r-j-1]
+            matrix[i][j] = matrix[i][j] + matrix[i][c-j-1]
+            matrix[i][c-j-1] = matrix[i][j] - matrix[i][c-j-1]
+            matrix[i][j] = matrix[i][j] - matrix[i][c-j-1]
     
     print(matrix)
 

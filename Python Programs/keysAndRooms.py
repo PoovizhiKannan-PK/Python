@@ -2,6 +2,7 @@
 # You can access room 0 directly and get keys from it
 # After that, for a room i, you can access it only if you already have the key for that room
 # Return true if you can access all the keys
+# This is a leetcode problem, check for "Keys and Rooms" to better understand the problem
 
 
 # lst = [[1,3], [3,0,1], [2], [0]] # Invalid, you cannot access room 2, because, room 0 and 1 did not have the key for room 2
