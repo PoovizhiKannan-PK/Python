@@ -1,5 +1,6 @@
 # For a given array of integers[1,1,1], find number of subarray sum equals k(2)
 # Output = 2. [1,1][1,1]
+# This'll work only for positive numbers
 
 def getSum(left, right, lst):
     sum =0
@@ -24,7 +25,7 @@ def sumOfSubArrayEqualsK(lst, k):
     return count
 
 
-lst = [1,1,1,1,-1]
+lst = [1,1,1,1]
 k = 2
 
 print(sumOfSubArrayEqualsK(lst, k))
