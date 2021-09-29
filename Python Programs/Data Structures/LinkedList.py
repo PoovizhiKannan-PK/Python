@@ -64,6 +64,7 @@ class LinkedList:
         itr = self.head
         for i in range(0, pos-1):
             itr = itr.next
+        
         itr.next = itr.next.next
 
     def insert_at(self, pos, data):
@@ -107,29 +108,30 @@ class LinkedList:
 
 if __name__ == '__main__':
     ll = LinkedList()
-    ll.print_list()
-    ll.insert_values([1,2,3,4,5])
-    ll.insert_values(["Hello", "There"])
-    ll.print_list()
-    print(ll.get_ll_length())
-    ll.remove_at(0)
-    ll.remove_at(2)
-    ll.print_list()
-    print(ll.get_ll_length())
-    ll.insert_at(3, 6)
-    ll.insert_at(4, "Well")
-    ll.print_list()
-    ll.insert_after_value(6, 7)
-    ll.insert_after_value("Well", "well")
-    ll.print_list()
-    ll.remove_by_value(6)
-    ll.remove_by_value("well")
-    ll.print_list()
-    print(ll.get_ll_length())
+    # ll.print_list()
+    # ll.insert_values([1,2,3,4,5])
+    # ll.insert_values(["Hello", "There"])
+    # ll.print_list()
+    # print(ll.get_ll_length())
+    # ll.remove_at(0)
+    # ll.remove_at(2)
+    # ll.print_list()
+    # print(ll.get_ll_length())
+    # ll.insert_at(3, 6)
+    # ll.insert_at(4, "Well")
+    # ll.print_list()
+    # ll.insert_after_value(6, 7)
+    # ll.insert_after_value("Well", "well")
+    # ll.print_list()
+    # ll.remove_by_value(6)
+    # ll.remove_by_value("well")
+    # ll.print_list()
+    # print(ll.get_ll_length())
 
-    # ll.insert_at_begining(1)
-    # ll.insert_at_begining(2)
-    # ll.insert_at_begining(3)
-    # ll.insert_at_end(4)
-    # ll.insert_at_end(5)
-    
+    ll.insert_at_begining(1)
+    ll.insert_at_begining(2)
+    ll.insert_at_begining(3)
+    ll.insert_at_end(4)
+    ll.insert_at_end(5)
+    ll.remove_at(4)
+    ll.print_list()
